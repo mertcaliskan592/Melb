@@ -121,11 +121,11 @@ struct SettingsView: View {
             Text("All data will be deleted")
         }
         .sheet(isPresented: $isPrivacyShown) {
-            PrivacyPolicyWrapper(privacyURL: "")
+            PrivacyPolicyWrapper(privacyURL: "https://sites.google.com/view/melbgame/privacy-policy")
                 .presentationDetents([.height(size().height / 1.15)])
         }
         .sheet(isPresented: $isContactShown) {
-            PrivacyPolicyWrapper(privacyURL: "")
+            PrivacyPolicyWrapper(privacyURL: "https://sites.google.com/view/melbgame/contact-us")
                 .presentationDetents([.height(size().height / 1.15)])
         }
     }
